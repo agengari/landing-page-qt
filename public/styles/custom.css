@@ -1,0 +1,29 @@
+/* Set warna background dan font family halaman */
+body {
+  background-color: #f8f8f8;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Atur lebar konten dan jarak antar elemen */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Atur styling pada tombol */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2a4365;
+  transition: all 0.2s;
+}
+
+/* Atur efek hover pada tombol */
+.btn:hover {
+  background-color: #1a365d;
+}

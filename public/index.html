@@ -5,15 +5,258 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tambahkan link ke file CSS Tailwind Anda -->
+    <link rel="stylesheet" href="styles/custom.css">
     <link rel="stylesheet" href="styles/style.css" />
+    <!-- npx tailwindcss -i ./src/styles/input.css -o ./public/styles/style.css --watch  -->
     <title>CV. Queen Teknik</title>
   </head>
   <body>
-    <!-- Konten halaman Anda akan ditambahkan di sini -->
-    <div class="flex justify-center items-center h-screen bg-gray-100">
-      <h1 class="text-3xl font-bold text-gray-900">
-        Welcome to our landing page
-      </h1>
-    </div>
+    <!-- Header -->
+    <header class="bg-gray-900 text-gray-100">
+      <nav class="flex items-center justify-between flex-wrap p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <img src="logo.png" alt="Logo QT" class="h-8 mr-2">
+          <span class="font-semibold text-xl tracking-tight">CV. Queen Teknik</span>
+        </div>
+        <div class="block lg:hidden">
+          <button class="toggle-button flex items-center px-3 py-2 border rounded text-gray-100 border-gray-100 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a href="#" class="nav-links block mt-4 lg:inline-block lg:mt-0 text-gray-100 hover:text-white mr-4">
+              Tentang
+            </a>
+            <a href="#" class="nav-links block mt-4 lg:inline-block lg:mt-0 text-gray-100 hover:text-white mr-4">
+              Layanan
+            </a>
+            <a href="#" class="nav-links block mt-4 lg:inline-block lg:mt-0 text-gray-100 hover:text-white mr-4">
+              Portofolio
+            </a>
+            <a href="#" class="nav-links block mt-4 lg:inline-block lg:mt-0 text-gray-100 hover:text-white">
+              Contact
+            </a>
+          </div>
+          <div>
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-900 hover:bg-white mt-4 lg:mt-0">Hubungi Kami</a>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-gray-800 py-12">
+        <div class="container mx-auto px-6">
+          <h1 class="text-3xl sm:text-5xl text-gray-100 leading-tight mb-6">Jasa Perbaikan Genset Terpercaya</h1>
+          <p class="text-gray-100 text-lg mb-12">Kami menyediakan layanan perbaikan genset dengan tenaga ahli yang berpengalaman dan terpercaya.</p>
+          <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-900 hover:bg-white mt-4 lg:mt-0">Pelajari Lebih Lanjut</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tentang Perusahaan -->
+    <section class="bg-white">
+      <div class="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="md:pr-8">
+            <h2 class="text-3xl font-extrabold text-gray-900">Tentang Perusahaan</h2>
+            <p class="mt-4 text-lg text-gray-500">Deskripsi singkat tentang perusahaan anda.</p>
+            <div class="mt-8">
+              <h3 class="text-lg font-medium text-gray-900">Keunggulan</h3>
+              <ul class="mt-4 text-lg text-gray-500 list-disc list-inside">
+                <li>Keunggulan 1</li>
+                <li>Keunggulan 2</li>
+                <li>Keunggulan 3</li>
+                <li>Keunggulan 4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-8 md:mt-0">
+            <img class="w-full h-64 object-cover object-center rounded-lg shadow-md" src="https://source.unsplash.com/random/800x600" alt="Foto perusahaan">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Layanan -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Layanan Kami</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center">
+            <img src="https://source.unsplash.com/random/400x400" alt="Layanan 1" class="mb-4 rounded-full">
+            <h3 class="text-lg font-medium mb-2">Layanan 1</h3>
+            <p class="text-gray-600 text-center">Deskripsi layanan 1.</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="https://source.unsplash.com/random/400x400" alt="Layanan 2" class="mb-4 rounded-full">
+            <h3 class="text-lg font-medium mb-2">Layanan 2</h3>
+            <p class="text-gray-600 text-center">Deskripsi layanan 2.</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="https://source.unsplash.com/random/400x400" alt="Layanan 3" class="mb-4 rounded-full">
+            <h3 class="text-lg font-medium mb-2">Layanan 3</h3>
+            <p class="text-gray-600 text-center">Deskripsi layanan 3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Portofolio -->
+    <section class="py-10 bg-white" id="portofolio">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-6">Portofolio</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 1">
+          </div>
+          <div class="overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 2">
+          </div>
+          <div class="overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 3">
+          </div>
+          <div class="overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 4">
+          </div>
+          <div class="overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 5">
+          </div>
+          <div class="overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 6">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Testimoni -->
+    <section class="py-10 bg-gray-100" id="testimoni">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-6">Testimoni</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="https://source.unsplash.com/random/400x400" alt="Testimoni 1" class="object-cover w-full h-40">
+            <div class="p-4">
+              <p class="text-lg mb-4">"Pelayanannya sangat cepat dan tepat waktu. Kami sangat puas dengan layanan yang diberikan."</p>
+              <p class="font-semibold">John Doe</p>
+              <p>CEO, ABC Company</p>
+            </div>
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="https://source.unsplash.com/random/400x400" alt="Testimoni 2" class="object-cover w-full h-40">
+            <div class="p-4">
+              <p class="text-lg mb-4">"Kualitas pekerjaan mereka sangat baik. Kami merekomendasikan perusahaan ini kepada siapa saja yang membutuhkan layanan perbaikan genset."</p>
+              <p class="font-semibold">Jane Doe</p>
+              <p>CTO, XYZ Company</p>
+            </div>
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="https://source.unsplash.com/random/400x400" alt="Testimoni 3" class="object-cover w-full h-40">
+            <div class="p-4">
+              <p class="text-lg mb-4">"Tim teknisi mereka sangat profesional dan ahli. Mereka menyelesaikan pekerjaan dengan cepat dan efisien."</p>
+              <p class="font-semibold">Bob Smith</p>
+              <p>Owner, DEF Company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Kontak -->
+    <section id="kontak" class="bg-white py-8">
+      <div class="container mx-auto">
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-3xl font-bold mb-4">Kontak</h2>
+          <p class="mb-8">Silakan mengisi formulir di bawah ini atau hubungi kami melalui informasi kontak yang tersedia.</p>
+        </div>
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full lg:w-1/2 px-4">
+            <form action="#" method="POST" class="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="nama">
+                  Nama
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nama" type="text" placeholder="Masukkan nama Anda">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="email">
+                  Email
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Masukkan alamat email Anda">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="pesan">
+                  Pesan
+                </label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pesan" rows="6" placeholder="Tulis pesan Anda di sini"></textarea>
+              </div>
+              <div class="flex items-center justify-center">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="w-full lg:w-1/2 px-4">
+            <div class="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <h3 class="text-xl font-bold mb-4">Informasi Kontak</h3>
+              <p class="mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Jl. Raya Bogor KM 37, Cibinong, Bogor</p>
+              <p class="mb-4"><i class="fas fa-phone-alt mr-2"></i>(021) 1234567</p>
+              <p class="mb-4"><i class="fas fa-envelope mr-2"></i>info@perusahaangenset.com</p>
+              <div class="flex items-center justify-center mt-4">
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-bold">Ikuti Kami di Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>           
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto flex flex-wrap justify-between">
+        <div class="w-full md:w-1/4">
+          <h3 class="font-bold text-lg mb-4">Navigasi</h3>
+          <ul class="list-none">
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">Beranda</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">Layanan</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">Portofolio</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">Testimoni</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4">
+          <h3 class="font-bold text-lg mb-4">Informasi Perusahaan</h3>
+          <ul class="list-none">
+            <li class="mb-2">Jl. Jend. Sudirman No. 123</li>
+            <li class="mb-2">Jakarta Selatan, Indonesia</li>
+            <li class="mb-2">Telp: +62 123 456789</li>
+            <li class="mb-2">Email: info@perusahaangenset.com</li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4">
+          <h3 class="font-bold text-lg mb-4">Ikuti Kami</h3>
+          <ul class="list-none">
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">Facebook</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">Twitter</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">Instagram</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-gray-400">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <p>Hak Cipta © 2023 Perusahaan Genset. Seluruh hak dilindungi undang-undang.</p>
+      </div>
+    </footer>
+    
+    <!-- <script src="../src/js/script.js"></script> -->
+    <script>
+      const toggleButton = document.querySelector('.toggle-button');
+      const navLinks = document.querySelector('.nav-links');
+
+      toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>
