@@ -7,10 +7,11 @@
     <!-- Tambahkan link ke file CSS Tailwind Anda -->
     <link rel="stylesheet" href="styles/custom.css">
     <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- npx tailwindcss -i ./src/styles/input.css -o ./public/styles/style.css --watch  -->
     <title>CV. Queen Teknik</title>
   </head>
-  <body>
+  <body class="font-sans" >
     <!-- Navbar-->
     <div class="p-6 mx-auto bg-gray-900">
       <nav class="flex justify-between flex-wrap items-center">
@@ -27,53 +28,53 @@
         </div>
         <ul class="menu-mobile w-full gap-5 mr-4 lg:w-auto lg:flex hidden">
           <li class="mt-4 lg:mt-0 text-gray-500 hover:text-white">
-            <a href="">Layanan</a>
+            <a href="#tentang" class="scroll">Tentang</a>
           </li>
           <li class="mt-4 lg:mt-0 text-gray-500 hover:text-white">
-            <a href="">Portofolio</a>
+            <a href="#layanan" class="scroll">Layanan</a>
           </li>
           <li class="mt-4 lg:mt-0 text-gray-500 hover:text-white">
-            <a href="">Testimoni</a>
+            <a href="#portofolio" class="scroll">Portofolio</a>
           </li>
           <li class="mt-4 lg:mt-0 text-gray-500 hover:text-white">
-            <a href="">Kontak</a>
+            <a href="#kontak" class="scroll">Kontak</a>
           </li>
           <div class="mt-4 w-full flex lg:hidden">
-            <a href="#" class="border rounded px-4 py-2 text-white text-sm hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">Get Started</a>
+            <a href="wa.me/6281329126874" class="scroll border rounded px-4 py-2 text-white text-sm hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">Hubungi Kami</a>
           </div>
         </ul>
         <div class="w-full lg:w-auto lg:flex hidden">
-          <a href="#" class="border rounded px-4 py-2 text-white text-sm hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">Get Started</a>
+          <a href="wa.me/6281329126874" class="scroll border rounded px-4 py-2 text-white text-sm hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">Hubungi Kami</a>
         </div>
       </nav>
     </div>
       
     <!-- Header -->
-    <header class="bg-gray-900 text-gray-100">
-      <div class="bg-gray-800 py-12 min-h-[50vh]">
+    <header id="beranda" class="bg-gray-900 text-gray-100">
+      <div class="flex justify-center items-center bg-gray-800 py-12 min-h-screen lg:min-h-[50vh]">
         <div class="container mx-auto px-6">
-          <h1 class="text-3xl sm:text-5xl text-gray-100 leading-tight mb-6">Jasa Perbaikan Genset Terpercaya</h1>
-          <p class="text-gray-100 text-lg mb-12">Kami menyediakan layanan perbaikan genset dengan tenaga ahli yang berpengalaman dan terpercaya.</p>
-          <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-900 hover:bg-white mt-4 lg:mt-0">Pelajari Lebih Lanjut</a>
+          <h1 class="text-3xl sm:text-5xl text-gray-100 leading-tight mb-6">Jasa Perbaikan dan Pengadaan Genset Berkualitas</h1>
+          <p class="text-gray-100 text-justify text-lg mb-12">CV. Queen Teknik adalah perusahaan jasa perbaikan dan pengadaan genset dan dinamo terpercaya yang siap memberikan layanan terbaik untuk perusahaan dan perorangan. Kami memiliki tenaga ahli berpengalaman dan harga yang dapat disesuaikan dengan kebutuhan Anda.</p>
+          <a href="#tentang" class="scroll inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-900 hover:bg-white mt-4 lg:mt-0">Pelajari Lebih Lanjut</a>
         </div>
       </div>
     </header>
 
     <!-- Tentang Perusahaan -->
-    <section class="bg-gray-100 min-h-[50vh]">
-      <div class="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <section id="tentang" class="bg-gray-50 min-h-[50vh]">
+      <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-1 lg:gap-8 items-center">
           <div class="md:pr-8">
-            <h2 class="text-3xl font-extrabold text-gray-900">Tentang Perusahaan</h2>
-            <p class="mt-4 text-lg text-gray-500">Deskripsi singkat tentang perusahaan anda.</p>
+            <h2 class="text-3xl font-extrabold text-gray-900">Tentang Kami</h2>
+            <p class="mt-4 text-justify text-lg text-gray-500">Kami adalah perusahaan yang bergerak di bidang jasa perbaikan dan pengadaan genset serta dinamo. Dengan pengalaman teknisi lebih dari 10 tahun, kami siap memberikan pelayanan terbaik untuk perusahaan maupun perorangan. Sebagai badan usaha CV, kami tetap memberikan harga kompetitif yang dapat dikomunikasikan dan didukung oleh tenaga ahli berpengalaman.</p>
             <div class="mt-8">
-              <h3 class="text-lg font-medium text-gray-900">Keunggulan</h3>
-              <ul class="mt-4 text-lg text-gray-500 list-disc list-inside">
-                <li>Keunggulan 1</li>
-                <li>Keunggulan 2</li>
-                <li>Keunggulan 3</li>
-                <li>Keunggulan 4</li>
-              </ul>
+              <h3 class="text-2xl font-medium text-gray-900">Kenapa Kami?</h3>
+              <ol class="mt-4 pl-5 text-lg text-gray-500 list-decimal list-outside">
+                <li>Siap melayani client perorangan maupun perusahaan</li>
+                <li>Tenaga kerja yang berpengalaman dan profesional</li>
+                <li>Garansi produk yang jelas dan memuaskan</li>
+                <li>Harga yang kompetitif dan terjangkau</li>
+              </ol>
             </div>
           </div>
           <div class="mt-8 md:mt-0">
@@ -84,59 +85,58 @@
     </section>
     
     <!-- Layanan -->
-    <section class="py-16 bg-white">
+    <section id="layanan" class="py-16 bg-white">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8">Layanan Kami</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center md:text-start">Layanan Kami</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="flex flex-col items-center">
-            <img src="https://source.unsplash.com/random/400x400" alt="Layanan 1" class="mb-4 rounded-full">
-            <h3 class="text-lg font-medium mb-2">Layanan 1</h3>
-            <p class="text-gray-600 text-center">Deskripsi layanan 1.</p>
+            <img src="https://source.unsplash.com/random/400x401" alt="Layanan 1" class="mb-4 rounded-full">
+            <h3 class="text-2xl font-medium mb-2 text-center">Perbaikan & Pemeliharaan</h3>
+            <p class="text-gray-600 text-center">Layanan perbaikan serta pemeliharaan berkala genset dan dinamo untuk menjaga performa yang selalu optimal pada berbagai jenis dan merek, dilakukan oleh tenaga ahli yang berpengalaman dalam bidangnya.</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src="https://source.unsplash.com/random/400x400" alt="Layanan 2" class="mb-4 rounded-full">
-            <h3 class="text-lg font-medium mb-2">Layanan 2</h3>
-            <p class="text-gray-600 text-center">Deskripsi layanan 2.</p>
+            <img src="https://source.unsplash.com/random/400x402" alt="Layanan 2" class="mb-4 rounded-full">
+            <h3 class="text-2xl font-medium mb-2 text-center">Pengadaan Baru</h3>
+            <p class="text-gray-600 text-center">Kami menyediakan pengadaan genset untuk kebutuhan perusahaan atau perorangan, dengan berbagai pilihan merek dan kapasitas sesuai kebutuhan.</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src="https://source.unsplash.com/random/400x400" alt="Layanan 3" class="mb-4 rounded-full">
-            <h3 class="text-lg font-medium mb-2">Layanan 3</h3>
-            <p class="text-gray-600 text-center">Deskripsi layanan 3.</p>
+            <img src="https://source.unsplash.com/random/400x403" alt="Layanan 3" class="mb-4 rounded-full">
+            <h3 class="text-2xl font-medium mb-2 text-center">Rental Genset</h3>
+            <p class="text-gray-600 text-center">Kami menyediakan layanan rental genset untuk kebutuhan sementara, dengan berbagai pilihan kapasitas genset sesuai kebutuhan.</p>
           </div>
         </div>
       </div>
     </section>
     
     <!-- Portofolio -->
-    <section class="py-10 bg-gray-100" id="portofolio">
+    <section id="portofolio" class="py-10 bg-gray-50">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-semibold mb-6">Portofolio</h2>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="overflow-hidden">
-            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 1">
+        <h2 class="text-3xl font-semibold mb-6 text-center md:text-start">Portofolio</h2>
+        <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+          <div class="rounded-xl flex flex-col items-center overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x404" alt="Portofolio 1">
           </div>
-          <div class="overflow-hidden">
-            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 2">
+          <div class="rounded-xl flex flex-col items-center overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x405" alt="Portofolio 2">
           </div>
-          <div class="overflow-hidden">
-            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 3">
+          <div class="rounded-xl flex flex-col items-center overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x406" alt="Portofolio 3">
           </div>
-          <div class="overflow-hidden">
-            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 4">
+          <div class="rounded-xl flex flex-col items-center overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x407" alt="Portofolio 4">
           </div>
-          <div class="overflow-hidden">
-            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 5">
+          <div class="rounded-xl flex flex-col items-center overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x408" alt="Portofolio 5">
           </div>
-          <div class="overflow-hidden">
-            <img src="https://source.unsplash.com/random/400x400" alt="Portofolio 6">
+          <div class="rounded-xl flex flex-col items-center overflow-hidden">
+            <img src="https://source.unsplash.com/random/400x409" alt="Portofolio 6">
           </div>
         </div>
       </div>
     </section>
-    
-
+  
     <!-- Testimoni -->
-    <section class="py-10 bg-white" id="testimoni">
+    <!-- <section class="py-10 bg-white" id="testimoni">
       <div class="container mx-auto">
         <h2 class="text-3xl font-semibold mb-6">Testimoni</h2>
         <div class="grid grid-cols-3 gap-4">
@@ -166,11 +166,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     
 
     <!-- Kontak -->
-    <section id="kontak" class="bg-gray-100 py-8">
+    <section id="kontak" class="bg-white py-8">
       <div class="container mx-auto">
         <div class="flex flex-col items-center justify-center">
           <h2 class="text-3xl font-bold mb-4">Kontak</h2>
@@ -178,7 +178,7 @@
         </div>
         <div class="flex flex-wrap -mx-4">
           <div class="w-full lg:w-1/2 px-4">
-            <form action="#" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form action="#" method="POST" class="bg-gray-50 shadow-md rounded px-8 pt-6 pb-8 mb-4">
               <div class="mb-4">
                 <label class="block text-gray-700 font-bold mb-2" for="nama">
                   Nama
@@ -198,20 +198,20 @@
                 <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pesan" rows="6" placeholder="Tulis pesan Anda di sini"></textarea>
               </div>
               <div class="flex items-center justify-center">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                <button class="bg-green-600 hover:bg-green-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                   Kirim
                 </button>
               </div>
             </form>
           </div>
           <div class="w-full lg:w-1/2 px-4">
-            <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="bg-gray-50 shadow-md rounded px-8 pt-6 pb-8 mb-4">
               <h3 class="text-xl font-bold mb-4">Informasi Kontak</h3>
-              <p class="mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Jl. Raya Bogor KM 37, Cibinong, Bogor</p>
-              <p class="mb-4"><i class="fas fa-phone-alt mr-2"></i>(021) 1234567</p>
-              <p class="mb-4"><i class="fas fa-envelope mr-2"></i>info@perusahaangenset.com</p>
+              <p class="mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Jl. Cangkringan, Salakan, Selomartani, Kalasan, Sleman, Yogyakarta</p>
+              <p class="mb-4"><i class="fas fa-phone-alt mr-2"></i>0813-2912-6874</p>
+              <p class="mb-4"><i class="fas fa-envelope mr-2"></i>cvqueenteknik@gmail.com</p>
               <div class="flex items-center justify-center mt-4">
-                <a href="#" class="text-blue-500 hover:text-blue-700 font-bold">Ikuti Kami di Instagram</a>
+                <a href="wa.me/6281329126874" class="scroll text-green-600 hover:text-green-400 font-bold">Hubungi Kami</a>
               </div>
             </div>
           </div>
@@ -222,26 +222,26 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8">
       <div class="container mx-auto flex flex-wrap justify-between">
-        <div class="w-full md:w-1/4">
+        <div class="w-full md:w-1/2">
           <h3 class="font-bold text-lg mb-4">Navigasi</h3>
           <ul class="list-none">
-            <li class="mb-2"><a href="#" class="hover:text-gray-400">Beranda</a></li>
-            <li class="mb-2"><a href="#" class="hover:text-gray-400">Layanan</a></li>
-            <li class="mb-2"><a href="#" class="hover:text-gray-400">Portofolio</a></li>
-            <li class="mb-2"><a href="#" class="hover:text-gray-400">Testimoni</a></li>
-            <li class="mb-2"><a href="#" class="hover:text-gray-400">Kontak</a></li>
+            <li class="mb-2"><a href="#beranda" class="scroll hover:text-gray-400">Beranda</a></li>
+            <li class="mb-2"><a href="#tentang" class="scroll hover:text-gray-400">Tentang</a></li>
+            <li class="mb-2"><a href="#layanan" class="scroll hover:text-gray-400">Layanan</a></li>
+            <li class="mb-2"><a href="#portofolio" class="scroll hover:text-gray-400">Portofolio</a></li>
+            <li class="mb-2"><a href="#kontak" class="scroll hover:text-gray-400">Kontak</a></li>
           </ul>
         </div>
-        <div class="w-full md:w-1/4">
+        <div class="w-full md:w-1/2">
           <h3 class="font-bold text-lg mb-4">Informasi Perusahaan</h3>
           <ul class="list-none">
-            <li class="mb-2">Jl. Jend. Sudirman No. 123</li>
-            <li class="mb-2">Jakarta Selatan, Indonesia</li>
-            <li class="mb-2">Telp: +62 123 456789</li>
-            <li class="mb-2">Email: info@perusahaangenset.com</li>
+            <li class="mb-2">Jl. Cangkringan, Salakan, Selomartani,</li>
+            <li class="mb-2">Kalasan, Sleman, Yogyakarta</li>
+            <li class="mb-2">Phone: 0813-2912-6874</li>
+            <li class="mb-2">Email: cvqueenteknik@gmail.com</li>
           </ul>
         </div>
-        <div class="w-full md:w-1/4">
+        <!-- <div class="w-full md:w-1/4">
           <h3 class="font-bold text-lg mb-4">Ikuti Kami</h3>
           <ul class="list-none">
             <li class="mb-2"><a href="#" class="hover:text-gray-400">Facebook</a></li>
@@ -249,13 +249,16 @@
             <li class="mb-2"><a href="#" class="hover:text-gray-400">Instagram</a></li>
             <li class="mb-2"><a href="#" class="hover:text-gray-400">LinkedIn</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
       <div class="text-center mt-8">
         <p>Hak Cipta © 2023 Perusahaan Genset. Seluruh hak dilindungi undang-undang.</p>
       </div>
     </footer>
     
+    <button id="scrollToTopButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full fixed bottom-0 right-0 m-4 hidden">Scroll to Top</button>
+
+
     <script src="../src/js/script.js"></script>
   </body>
 </html>
